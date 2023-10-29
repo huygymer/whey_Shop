@@ -249,12 +249,10 @@
           width:100%;
           padding:0 0 40px 0;
           .all-product{
-            gap:0;
+            gap:20px;
             display:grid;
             grid-template-columns: auto auto;
-            // grid-row-gap:10px;
-            column-gap:30px;
-            // gap:30px;
+            // column-gap:30px;
           }
         }
     }

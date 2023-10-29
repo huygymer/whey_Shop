@@ -487,11 +487,9 @@
     padding: 0 0 40px 0;
   }
   .body .content .all-product {
-    gap: 0;
+    gap: 20px;
     display: grid;
     grid-template-columns: auto auto;
-    -moz-column-gap: 30px;
-         column-gap: 30px;
   }
 }
 @keyframes shadow-pulse {
