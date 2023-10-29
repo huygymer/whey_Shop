@@ -15,7 +15,7 @@
 // }
 
           .sup{
-            margin:40px 0;
+            // margin:40px 0;
             transform-style:preserve-3d;
             transition: transform 1600ms;
             // border:1px solid black;
@@ -136,11 +136,12 @@
               transform: rotateY(180deg);
           }
 
-@media only screen and (max-width:425px) {
+@media only screen and (max-width:576px) {
     .sup{
         width:160px;
         height:220px;
         .front-card{
+            height:inherit;
             display:flex;
             justify-content:space-around;
           .whey{
