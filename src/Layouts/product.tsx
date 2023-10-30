@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
 import { addToCart } from "../services/cart.service";
+import React, {useState} from "react";
 const Product = ({
   id,
   image,
@@ -9,8 +9,18 @@ const Product = ({
   description,
   onAddToCart,
 }: any) => {
+
+  const [ isFlip, setIsFlip ] = useState(false);
+
+  const handleClick = () => {
+    setIsFlip(!isFlip);
+  };
+
+
+
   return (
-    <div className="sup" key={id}>
+    <div className={`sup ${isFlip ? "flipped" : ""}`} 
+    key={id} onClick={handleClick}>
       <div className="front-card">
         <img src={image} alt="mass" className="whey" />
         <div className="item">
@@ -19,7 +29,8 @@ const Product = ({
           <span className="sup-price"> {price.toLocaleString("de-DE")}đ </span>
         </div>
       </div>
-      <div className="back-card">
+      {/* {isFlip ? */}
+        <div className="back-card">
         <ul className="status">
           <li dangerouslySetInnerHTML={{ __html: description }}></li>
         </ul>
@@ -27,7 +38,8 @@ const Product = ({
           {" "}
           Bỏ giỏ hàng{" "}
         </div>
-      </div>
+      </div> 
+      {/* :null } */}
     </div>
   );
 };

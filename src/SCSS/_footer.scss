@@ -54,17 +54,24 @@
     }
 }
 
-@media only screen and (max-width:425px)  {
+@media only screen and (max-width:576px)  {
     .footer{
-        height:auto;
+        // height:auto;
         width:100%;
         .footer-wrapper{
             display:grid;
             grid-template-columns: auto auto;
             grid-row-gap:20px;
+            &_content:nth-child(2) {
+                display: none;
+            }
+            &_content:nth-child(4) {
+                display:none;
+            }
         }
         .footer-copy{
             text-align:center;
+            font-size: 14px;
         }
     }
 }

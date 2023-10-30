@@ -1,41 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
-
-// row 1
-// import beepXp from '../Image/beep-xp-protein.jpg';
-import mass from "../Image/mass-protein.jpg";
-import dietWhey from "../Image/diet-whey-protein.jpg";
-import casein from "../Image/casein-protein.jpg";
-import iso from "../Image/iso-xp-protein.jpg";
-
-// row 2
-import barProtein from "../Image/crunch-bar-protein.jpg";
-import vegan from "../Image/vegan-protein.jpg";
-import clearVegan from "../Image/clear-vegan-protein.jpg";
-import cream from "../Image/Banana-Cream.jpg";
-import cookie from "../Image/coockie.jpg";
-
-// row3
-import pre from "../Image/applid-pre.png";
-import arginnie from "../Image/arginnie.png";
-import hmb from "../Image/HMB.jpg";
-import beta from "../Image/beta-alanine.jpg";
-import citruline from "../Image/citruline.jpg";
-
-// row4
-import creatine from "../Image/creatine-mono.jpg";
-import aakg from "../Image/aakg.jpg";
-import bcaa from "../Image/bcaa.jpg";
-import eaa from "../Image/eaa.jpg";
-import abe from "../Image/abe-bump.jpg";
-
-// row5
-import barProtein2 from "../Image/indulegence protein bar.jpg";
-import crunchBar from "../Image/crunch-bar-protein.jpg";
-import swirl from "../Image/swirl-bar.jpg";
-import syrup1 from "../Image/syrup-low-cal.jpg";
-import syrup2 from "../Image/sauce-low-cal-428ml.jpg";
-
 import Product from "./product";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";

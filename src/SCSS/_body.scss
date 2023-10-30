@@ -230,14 +230,16 @@
           position:relative;
           width:80%;
           display:flex;
-          flex-direction: column;
+          // flex-direction: column;
           align-items: center;
+          background-color:pink;
           .tab{
-            width:150px;
+            width:120px;
             // height:80px;
             font-size:16px;
             @include centerDisplay;
             // display:none;
+            // position:fixed;
           }
         }
 

@@ -82,7 +82,7 @@ const Cart = () => {
                     <tr>
                       <td>
                         {" "}
-                        <img width={50} src={x.product.imageUrl} />{" "}
+                        <img className="img" width={50} src={x.product.imageUrl} />{" "}
                       </td>
                       <td> {x.product.name} </td>
                       <td> {x.product.price.toLocaleString("de-DE")} đ</td>
