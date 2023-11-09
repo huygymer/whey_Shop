@@ -1,6 +1,6 @@
 import axios from "axios";
 const http = axios.create({
-  baseURL: "https://whey-api.onrender.com/",
+  baseURL: "https://whey-api-xx08.onrender.com",
   timeout: 100000,
 });
 

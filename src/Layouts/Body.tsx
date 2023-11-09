@@ -1,4 +1,8 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+
+
+
 import Product from "./product";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
@@ -25,11 +29,13 @@ const Body = ({ title }: any) => {
   const changeTab = (tabId: any) => () => {
     setSelectedCategory(tabId);
   };
+
+
   return (
     <>
-      <div className="body" id="body">
+      <div  className="body" id="body">
       <ToastContainer />
-        <div className="banner">
+        {/* <div className="banner">
           <div className="introduce">
             <div className="title">
               <div className="banner--content">
@@ -48,7 +54,8 @@ const Body = ({ title }: any) => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
+        <div className="wrapper-menu">
         <div className="tabs">
           <div
             className={`tab ${!selectedCategory ? "active-tab" : ""}`}
@@ -65,9 +72,8 @@ const Body = ({ title }: any) => {
             </div>
           ))}
         </div>
-        <div className="menu-mobile">
-            <FontAwesomeIcon icon={faBars} className="menu-icon" style={{color: "#0d0d0d",}} />
         </div>
+        
         <div className="content">
           <div className="all-product">
             {products
@@ -77,7 +83,7 @@ const Body = ({ title }: any) => {
               .map((x) => (
                 <Product
                   id={x.id}
-                  type="Protein Support"
+                  type={x.category.name}
                   name={x.name}
                   price={x.price}
                   image={x.imageUrl}

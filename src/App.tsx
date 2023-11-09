@@ -4,6 +4,7 @@ import React, { useEffect } from "react";
 import Header from "./Layouts/Header";
 import Body from "./Layouts/Body";
 import Footer from "./Layouts/Footer";
+import Slider from "./Layouts/Slider";
 
 // logo image
 import account from "./Image/account.png";
@@ -17,9 +18,8 @@ function App() {
   return (
     <>
       <Header account={account} cart={cart} logo={logo}></Header>
-      <Body title="Experience New Product">
-
-      </Body>
+      <Slider></Slider>
+      <Body title="Experience New Product"></Body>
       <Footer></Footer>
     </>
   );
