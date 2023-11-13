@@ -9,21 +9,24 @@ import {faArrowRight} from '@fortawesome/free-solid-svg-icons';
 
 const Slide = () => {
 
-  const [slide, setSlide] = useState(1);
+//   const [slide, setSlide] = useState(1);
 
-  // const handleClick = () => {
-  //   console.log("active");
-  // }
+//   const nextSlide = () => {
+//     setSlide(slide + 1 );
+//     // setSlide(slide + 1); 
+//   }
+
+//   const preSlide = () => {
+//     // setSlide(slide - 1);
+//     setSlide(slide === 0 ? slide -1 : slide + 1);
+//   }
+
+  const [slide, setSlide] = useState(0);
 
   const nextSlide = () => {
-    setSlide(slide + 1 );
-    // setSlide(slide + 1); 
+    setSlide ( slide + 1) ;
   }
-
-  const preSlide = () => {
-    // setSlide(slide - 1);
-    setSlide(slide === 0 ? slide -1 : slide + 1);
-  }
+  
 
     return(
         <div className="slider">
@@ -32,7 +35,7 @@ const Slide = () => {
                     <FontAwesomeIcon icon={faArrowLeft} style={{color: "#6a5af9",}} onClick={nextSlide} />
                 </div>
                 <div className="slider-change next">
-                    <FontAwesomeIcon icon={faArrowRight} style={{color: "#6a5af9",}} onClick={preSlide} />
+                    <FontAwesomeIcon icon={faArrowRight} style={{color: "#6a5af9",}}/>
                 </div>
                 <div className={`slider-content ${setSlide ? "slider-img" : "slider slide hidden"}`}>
                     <div className="slider-item">
