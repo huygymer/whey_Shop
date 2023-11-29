@@ -35,7 +35,7 @@ const Body = ({ title }: any) => {
     <>
       <div  className="body" id="body">
       <ToastContainer />
-        {/* <div className="banner">
+        <div className="banner">
           <div className="introduce">
             <div className="title">
               <div className="banner--content">
@@ -54,7 +54,7 @@ const Body = ({ title }: any) => {
               </div>
             </div>
           </div>
-        </div> */}
+        </div>
         <div className="wrapper-menu">
         <div className="tabs">
           <div

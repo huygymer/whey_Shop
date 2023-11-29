@@ -140,7 +140,7 @@ const Cart = () => {
                   </tbody>
                 </table>
               </form>
-              <button onClick={() => sethowModalPayment(true)}> Thanh Toán </button>
+              <button onClick={() => sethowModalPayment(true)}> Payment </button>
               <Elements stripe={stripeConfig}>
                 <PaymentModal
                   open={showModalPayment}

@@ -134,7 +134,8 @@
                 width:35%;
                 height:100%;
                 display:flex;
-                justify-content:space-between;
+                justify-content:center;
+                gap:10px;
                 flex-direction: column;
                 align-items:Center;
                 .wrapper{
@@ -177,11 +178,10 @@
                     }
                 }
                 .return{
-                    margin-bottom:20px;
+                    // margin-bottom:20px;
                     .rtn{
                         text-decoration:none;
                         color:#6a5af9;
-                        padding:5px 10px;
                         border:1px solid #6a5af9;
                         font-weight:600;
                     }
@@ -217,13 +217,48 @@
             flex-direction: column;
             align-items:Center;
             &_payment{
+                border-radius:7px;
                 position:relative;
                 margin-top:10px;
                 width:90%;
-                height:350px;
+                height:300px;
+                margin: 10px 0 20px 0 ;
+
+                .wrapper{
+                    h2{
+                        font-size:22px;
+                    }
+                    .payment--form{
+                        .payment-table{
+                             tbody{
+                                tr{
+                                    td{
+                                        font-size:16px;
+                                    }
+                                }
+                             }
+                        }
+                    }
+                    button{
+                        width:200px;
+                        padding:7px 10px;
+                    }
+                }
+                .return{
+                    // margin:10px 0;
+                    .rtn{
+                        display:block;
+                        width:inherit;
+                        padding:5px 10px;
+                        width:200px;
+
+                    }
+                }
             }
             &_product{
                 position:relative;
+                border-radius: 7px;
+                margin:20px 0 10px 0 ;
                 width:90%;
                 border:1px solid #e1e1e1;
                 .cart--form{
@@ -235,31 +270,45 @@
                     table{
                         max-width:100%;
                         thead{
-                            width:100%;
+                            max-width:100%;
                             tr{
                                 width:auto;
-                                th:nth-child(2){
+                                th{
+                                    font-size:15px;
+                                }
+                                th:nth-child(5){
                                     display:none;
                                 }
                             }
                         }
 
                         tbody{
+                            max-width:100%;
                             tr{
-                                width:100%;
+                                width:auto;
                                 td:nth-child(2) {
                                     overflow:scroll;
                                     height:20px;
+                                    // background-color: pink;
+                                    // width:120px;
+                                    font-size:13px;
+                                }
+                                td:nth-child(3) {
+                                    // background-color: blue;
                                     font-size:12px;
-                                    // padding:25px 12px;
+                                    // width:100px;
                                 }
                                 td:nth-child(5) {
                                     display:none;
+                                    min-width:30px;
                                 }
                                 td:nth-child(4) {
-                                    height:60px;
+                                    height:40px;
+                                    // background-color:#6a5af9 ;
                                 }
                                 td {
+                                    // max-width: 50px;
+                                    word-wrap: break-word;
                                     height:20px;
                                     font-size:12px;
                                     .img{
@@ -267,10 +316,20 @@
                                         height:40px;
                                     }
                                     .qty{
-                                        // height:20px;
-                                        width:60px;
+                                            height:auto;
+                                            max-width:90px;
+                                            display: flex;
+                                            align-items: center;
+                                            text-align: center;
                                         input{
-                                            width:20px;
+                                            height:30px;
+                                            width:30px;
+                                        }
+                                        &_button{
+                                            // padding:5px;
+                                            height:30px;
+                                            width:30px;
+                                            
                                         }
                                     }
                                     .remove{

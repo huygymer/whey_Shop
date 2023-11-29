@@ -18,7 +18,6 @@ function App() {
   return (
     <>
       <Header account={account} cart={cart} logo={logo}></Header>
-      <Slider></Slider>
       <Body title="Experience New Product"></Body>
       <Footer></Footer>
     </>

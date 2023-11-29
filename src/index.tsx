@@ -57,7 +57,7 @@ const router = createBrowserRouter([
     element: <DarkModePage/>
   },
   {
-    path:'/productInfo', // path này đặt tên gì cũng được, để Link gọi đúng tên
+    path:'/productInfo', 
     element: <ProductInfo/> // element name is always an uppercase.
   }
 ]);

@@ -36,7 +36,8 @@ const Product = ({
         </ul>
         <div className="btn" onClick={onAddToCart}>
           {" "}
-          Bỏ giỏ hàng{" "}
+            Add To Cart
+          {" "}
         </div>
       </div> 
       {/* :null } */}
